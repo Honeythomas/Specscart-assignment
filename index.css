@@ -4,13 +4,27 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+.navbar-left {
+  flex-grow: 1;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 10px;
+}
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar {
   background-color: #333;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .navbar-brand {
@@ -166,4 +180,50 @@ body {
 
 .youtube-link:hover {
   background-color: darkred;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  max-height: 500px;
+  margin-left: 40px;
+}
+
+.image-container img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.arrow {
+  margin: 0 10px;
+}
+
+.image-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.image-containers img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.imgspecs {
+  height: 80px;
+  position: relative;
+  right: 300px;
+}
+
+.icon {
+  cursor: pointer;
 }
